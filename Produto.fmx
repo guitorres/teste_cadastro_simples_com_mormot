@@ -1,0 +1,135 @@
+object FormularioProduto: TFormularioProduto
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 590
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object TListBox
+    Align = Client
+    Margins.Left = 50.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 50.000000000000000000
+    Margins.Bottom = 20.000000000000000000
+    Size.Width = 490.000000000000000000
+    Size.Height = 360.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 486.000000000000000000
+    Viewport.Height = 356.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      StyledSettings = [Family, Size, Style, FontColor]
+      Size.Width = 486.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      TabStop = False
+      object Label1: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        Margins.Left = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Size.Width = 466.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Text = 'Produto'
+      end
+      object edtProduto: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 0
+        Position.X = 20.000000000000000000
+        Position.Y = 17.000000000000000000
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 50.000000000000000000
+        Size.Width = 416.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      StyledSettings = [Family, Size, Style, FontColor]
+      Position.Y = 50.000000000000000000
+      Size.Width = 486.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      TabStop = False
+      object Label2: TLabel
+        Align = Top
+        StyledSettings = [Family, FontColor]
+        Margins.Left = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Size.Width = 466.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Text = 'Pre'#231'o'
+      end
+      object edtPReco: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Position.X = 20.000000000000000000
+        Position.Y = 17.000000000000000000
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 50.000000000000000000
+        Size.Width = 416.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object PanelMenu: TPanel
+    Align = Bottom
+    Position.Y = 400.000000000000000000
+    Size.Width = 590.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object BotaoCancelar: TButton
+      Align = Left
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 50.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      TabStop = False
+      Text = 'Cancelar'
+      OnClick = BotaoCancelarClick
+    end
+    object BotaoConfirmar: TButton
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 220.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      TabStop = False
+      Text = 'Ok'
+      OnClick = BotaoConfirmarClick
+    end
+  end
+end

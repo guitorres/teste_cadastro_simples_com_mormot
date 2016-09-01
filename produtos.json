@@ -1,0 +1,29 @@
+"produtos":[{
+	"descricao": "CHOCOLATE",
+	"preco": 10
+ },
+{
+	"descricao": "PÃO",
+	"preco": 1
+ },
+{
+	"descricao": "PAPEL",
+	"preco": 1
+ },
+{
+	"descricao": "CADEIRA",
+	"preco": 100
+ },
+{
+	"descricao": "TELEFONE",
+	"preco": 20
+ },
+{
+	"descricao": "MOCHILA",
+	"preco": 80
+ },
+{
+	"descricao": "TECLADO",
+	"preco": 60
+ }
+]

@@ -1,0 +1,94 @@
+object FormularioPrincipal: TFormularioPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Produtos'
+  ClientHeight = 480
+  ClientWidth = 590
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object PanelMenu: TPanel
+    Align = Bottom
+    Position.Y = 400.000000000000000000
+    Size.Width = 590.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object BotaoNovoProduto: TButton
+      Align = Left
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 50.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Novo produto'
+      OnClick = BotaoNovoProdutoClick
+    end
+    object BotaoEditarProduto: TButton
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 220.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Editar produto'
+      OnClick = BotaoEditarProdutoClick
+    end
+    object BotaoRemoverProduto: TButton
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 390.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Remover produto'
+      OnClick = BotaoRemoverProdutoClick
+    end
+  end
+  object ListaProdutos: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Margins.Left = 50.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 50.000000000000000000
+    Margins.Bottom = 20.000000000000000000
+    Size.Width = 490.000000000000000000
+    Size.Height = 360.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+  end
+  object Button1: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Zerar'
+    OnClick = Button1Click
+  end
+end
